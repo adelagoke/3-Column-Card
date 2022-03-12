@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Outfit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* body */
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+.full-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.sedan-container,
+.suv-container,
+.luxury-container {
+    height: 500px;
+    width: 310px;
+    text-align: left;
+    line-height: 25px;
+    padding: 50px 50px 25px;
+}
+
+/* background color section */
+.sedan-container{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.suv-container{
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury-container{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* text section */
+h1{
+    color: hsl(0, 0%, 95%);
+    margin: 30px 0 40px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 100px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+/* buttons section */
+a{
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.btn{
+    background-color: hsl(0, 0%, 95%);
+    padding: 12px 35px;
+    border-width: 0;
+    border-radius: 25px;
+}
+.btn-sedans{
+    color: hsl(31, 77%, 52%);
+}
+.btn-suv{
+    color: hsl(184, 100%, 22%);
+}
+.btn-lux{
+    color: hsl(179, 100%, 13%);
+}
+
+/* hover codes */
+.btn-sedans:hover,
+.btn-suv:hover,
+.btn-lux:hover{
+    color: hsl(0, 0%, 95%);
+    border: 3px solid hsl(0, 0%, 95%);
+}
+.btn-sedans:hover{
+    background-color: hsl(31, 77%, 52%);
+}
+.btn-suv:hover{
+    background-color: hsl(184, 100%, 22%);
+}
+.btn-lux:hover{
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+
+/* mobile responsiveness */
+
+@media only screen and (max-width: 600px) {
+
+    .full-container{
+        display: block;
+    }
+
+    /* background color section */
+.sedan-container{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+}
+
+
+.luxury-container{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+}
